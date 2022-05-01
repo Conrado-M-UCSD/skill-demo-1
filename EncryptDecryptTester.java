@@ -8,7 +8,7 @@ public class EncryptDecryptTester {
     @Test
     public void testMethodsSimple() {
         String secretMessage = "shhhh, secret!";
-        String orginalSecret = "{-} " + secretMessage;
+        String orginalSecret = "{-} {+} " + secretMessage;
         String expectedMsg = "{+} #^^^^, #>cr>%F";
         secretMessage = EncrypterDecrypter.encryptText(secretMessage);
         assertEquals(expectedMsg, secretMessage);
